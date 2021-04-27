@@ -3,30 +3,21 @@ import { Card, CardBody, CardImg, CardText, CardTitle } from "reactstrap";
 import categories from "../config/categories";
 import "./category.css";
 import { Link, useParams } from "react-router-dom";
-import {
-  Card,
-  Button,
-  CardTitle,
-  CardText,
-  Col,
-  Container,
-  Row
-} from "reactstrap";
+import { Col, Container, Row } from "reactstrap";
 import Example from "./fade";
-import { Link } from "react-router-dom";
 
 const ItemDetalhes = () => {
   const params = useParams();
   const categoryId = parseInt(params.categoryId);
   const productId = parseInt(params.productId);
 
-  const category = categories.find(category => category.id == categoryId);
+  const category = categories.find((category) => category.id == categoryId);
 
   if (category === undefined) {
     return <div className="text-white">Categoria não encontrada</div>;
   }
 
-  const product = category.products.find(product => product.id == productId);
+  const product = category.products.find((product) => product.id == productId);
 
   if (product === undefined) {
     return <div className="text-white">Produto não encontrado</div>;
@@ -69,7 +60,7 @@ const ItemDetalhes = () => {
                 <div>
                   {product.price.toLocaleString("pt-BR", {
                     style: "currency",
-                    currency: "BRL"
+                    currency: "BRL",
                   })}
                 </div>
 

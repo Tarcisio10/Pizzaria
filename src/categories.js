@@ -7,7 +7,7 @@ import "./categories.css";
 const Header = () => {
   return (
     <Nav className="categories" style={{ backgroundColor: "#232525" }}>
-      {categories.map(category => (
+      {categories.map((category) => (
         <NavItem key={category.id}>
           <Link to={`/categories/${category.id}`} className="nav-link">
             {category.name}

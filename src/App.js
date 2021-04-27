@@ -4,7 +4,7 @@ import {
   Link,
   Switch,
   Redirect,
-  Route
+  Route,
 } from "react-router-dom";
 import Header from "./header";
 import Categories from "./categories";
@@ -13,7 +13,6 @@ import Cart from "./cart";
 import ItemDetalhes from "./itemDetalhes";
 import { Container } from "reactstrap";
 import categories from "../config/categories";
-
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./style.css";
 
@@ -39,7 +38,7 @@ const App = () => {
         />
         <Route exact path="/categories">
           <Container>
-            {categories.map(category => (
+            {categories.map((category) => (
               <Link
                 key={category.id}
                 to={`/categories/${category.id}`}
@@ -77,19 +76,19 @@ const App = () => {
 
 const useCart = () => {
   const [cart, setCart] = useState([]);
-  const isCartProduct = ({ categoryId, productId }) => cartProduct =>
+  const isCartProduct = ({ categoryId, productId }) => (cartProduct) =>
     cartProduct.categoryId === categoryId &&
     cartProduct.productId === productId;
-  const not = fn => element => !fn(element);
+  const not = (fn) => (element) => !fn(element);
   const addToCart = ({ categoryId, productId }) =>
-    setCart(cart => {
+    setCart((cart) => {
       const cartProduct = cart.find(isCartProduct({ categoryId, productId }));
       if (cartProduct) {
-        return cart.map(cartProduct2 => {
+        return cart.map((cartProduct2) => {
           return cartProduct === cartProduct2
             ? {
                 ...cartProduct,
-                quantity: cartProduct.quantity + 1
+                quantity: cartProduct.quantity + 1,
               }
             : cartProduct2;
         });
@@ -98,16 +97,16 @@ const useCart = () => {
     });
   const removeFromCart = ({ categoryId, productId }) => {
     const _isProduct = isCartProduct({ categoryId, productId });
-    setCart(cart => {
+    setCart((cart) => {
       const cartProduct = cart.find(_isProduct);
       if (cartProduct.quantity === 1) {
         return cart.filter(not(_isProduct));
       }
-      return cart.map(cartProduct2 => {
+      return cart.map((cartProduct2) => {
         return cartProduct === cartProduct2
           ? {
               ...cartProduct,
-              quantity: cartProduct.quantity - 1
+              quantity: cartProduct.quantity - 1,
             }
           : cartProduct2;
       });

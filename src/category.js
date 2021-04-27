@@ -10,18 +10,17 @@ import {
   CardTitle,
   Col,
   Container,
-  Row
+  Row,
 } from "reactstrap";
 import categories from "../config/categories";
 import "./category.css";
 import { Link, useParams } from "react-router-dom";
-import { Card, Button, CardTitle, CardText } from "reactstrap";
 
 const Category = ({ cart, addToCart, removeFromCart }) => {
   const params = useParams();
   const categoryId = parseInt(params.categoryId);
 
-  const category = categories.find(category => category.id === categoryId);
+  const category = categories.find((category) => category.id === categoryId);
 
   if (category === undefined) {
     return <div className="text-white">Categoria não encontrada</div>;
@@ -32,9 +31,9 @@ const Category = ({ cart, addToCart, removeFromCart }) => {
     <Container className="p-3">
       <CardDeck>
         <Row style={{ margin: -8 }}>
-          {products.map(product => {
+          {products.map((product) => {
             const cartProduct = cart.find(
-              cartProduct =>
+              (cartProduct) =>
                 cartProduct.categoryId === categoryId &&
                 cartProduct.productId === product.id
             ) ?? { categoryId, productId: product.id, quantity: 0 };
@@ -72,7 +71,7 @@ const Category = ({ cart, addToCart, removeFromCart }) => {
                       <div>
                         {product.price.toLocaleString("pt-BR", {
                           style: "currency",
-                          currency: "BRL"
+                          currency: "BRL",
                         })}
                       </div>
                       <div>

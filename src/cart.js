@@ -1,5 +1,4 @@
 import React from "react";
-import { Button } from "reactstrap";
 
 import {
   Button,
@@ -12,7 +11,7 @@ import {
   CardTitle,
   Col,
   Container,
-  Row
+  Row,
 } from "reactstrap";
 import categories from "../config/categories";
 
@@ -25,8 +24,8 @@ const Cart = ({ cart, addToCart, removeFromCart }) => {
 
   const totalValue = cart.reduce((totalValue, cartProduct) => {
     const product = categories
-      .find(category => category.id === cartProduct.categoryId)
-      .products.find(product => product.id === cartProduct.productId);
+      .find((category) => category.id === cartProduct.categoryId)
+      .products.find((product) => product.id === cartProduct.productId);
     return totalValue + product.price * cartProduct.quantity;
   }, 0);
 
@@ -34,10 +33,10 @@ const Cart = ({ cart, addToCart, removeFromCart }) => {
     <Container className="p-3">
       <CardDeck className="mb-3">
         <Row style={{ margin: -8 }}>
-          {cart.map(cartProduct => {
+          {cart.map((cartProduct) => {
             const product = categories
-              .find(category => category.id === cartProduct.categoryId)
-              .products.find(product => product.id === cartProduct.productId);
+              .find((category) => category.id === cartProduct.categoryId)
+              .products.find((product) => product.id === cartProduct.productId);
             return (
               <Col
                 key={`${cartProduct.categoryId}-${cartProduct.productId}`}
@@ -66,7 +65,7 @@ const Cart = ({ cart, addToCart, removeFromCart }) => {
                       <div>
                         {product.price.toLocaleString("pt-BR", {
                           style: "currency",
-                          currency: "BRL"
+                          currency: "BRL",
                         })}
                       </div>
                       <div>
@@ -103,7 +102,7 @@ const Cart = ({ cart, addToCart, removeFromCart }) => {
         Total:{" "}
         {totalValue.toLocaleString("pt-BR", {
           style: "currency",
-          currency: "BRL"
+          currency: "BRL",
         })}
       </div>
       <div>
