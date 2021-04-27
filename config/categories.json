@@ -1,0 +1,102 @@
+[
+  {
+    "name": "Pizzas Salgadas",
+    "id": 1,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pizzaria-tarcisio.appspot.com/o/pizza.jpg?alt=media&token=6e84a664-e7d8-4ed4-8d9c-60e1b29878b0",
+    "products": [
+      {
+        "name": "Mussarela",
+        "id": 1,
+        "description": "Mussarela",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pizzaria-tarcisio.appspot.com/o/pizza.jpg?alt=media&token=6e84a664-e7d8-4ed4-8d9c-60e1b29878b0",
+        "price": 35.99
+      },
+      {
+        "name": "Calabresa",
+        "id": 2,
+        "description": "Linguiça calabresa fatiada com cebola e azeitonas",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pizzaria-tarcisio.appspot.com/o/pizza.jpg?alt=media&token=6e84a664-e7d8-4ed4-8d9c-60e1b29878b0",
+        "price": 35.99
+      },
+      {
+        "name": "Portuguesa",
+        "id": 3,
+        "description": "Editada Presunto, cebola, ovos, azeitonas e mussarela",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/imagensfirebaseweb.appspot.com/o/pppsalgada%20(1).png?alt=media&token=e56c5109-0fca-45d9-8ec6-f5d5108dc7e3",
+        "price": 40.99
+      },
+      {
+        "name": "Portuguesa Especial",
+        "id": 4,
+        "description": "Editada Presunto, cebola, ovos, azeitonas, mussarela, milho e ervilha",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/imagensfirebaseweb.appspot.com/o/pppsalgada%20(1).png?alt=media&token=e56c5109-0fca-45d9-8ec6-f5d5108dc7e3",
+        "price": 42.99
+      },
+      {
+        "name": "Baiana",
+        "id": 5,
+        "description": "Presunto, cebola, ovos e mussarela",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pizzaria-tarcisio.appspot.com/o/pizza.jpg?alt=media&token=6e84a664-e7d8-4ed4-8d9c-60e1b29878b0",
+        "price": 42.99
+      },
+      {
+        "name": "Baiana Especial",
+        "id": 6,
+        "description": "Presunto, cebola, ovos, azeitonas e mussarela",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pizzaria-tarcisio.appspot.com/o/pizza.jpg?alt=media&token=6e84a664-e7d8-4ed4-8d9c-60e1b29878b0",
+        "price": 44.99
+      },
+      {
+        "name": "Marguerita",
+        "id": 7,
+        "description": "Mussarela e manjericão",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pizzaria-tarcisio.appspot.com/o/pizza.jpg?alt=media&token=6e84a664-e7d8-4ed4-8d9c-60e1b29878b0",
+        "price": 42.99
+      }
+    ]
+  },
+  {
+    "name": "Pizzas Doces",
+    "id": 2,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pizzaria-tarcisio.appspot.com/o/pizza.jpg?alt=media&token=6e84a664-e7d8-4ed4-8d9c-60e1b29878b0",
+    "products": [
+      {
+        "name": "Chocolate",
+        "id": 1,
+        "description": "chocolate",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/imagensfirebaseweb.appspot.com/o/pizzaDoce%20(1).png?alt=media&token=86ad1436-ced1-4fab-93ee-1e01ef48eb23",
+        "price": 25.99
+      },
+      {
+        "name": "Beijinho",
+        "id": 2,
+        "description": "beijinho",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pizzaria-tarcisio.appspot.com/o/pizza.jpg?alt=media&token=6e84a664-e7d8-4ed4-8d9c-60e1b29878b0",
+        "price": 26.99
+      },
+      {
+        "name": "Romeu e Julieta",
+        "id": 3,
+        "description": "romeu e julieta",
+        "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pizzaria-tarcisio.appspot.com/o/pizza.jpg?alt=media&token=6e84a664-e7d8-4ed4-8d9c-60e1b29878b0",
+        "price": 29.99
+      }
+    ]
+  },
+  {
+    "name": "Acompanhamentos",
+    "id": 3,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pizzaria-tarcisio.appspot.com/o/pizza.jpg?alt=media&token=6e84a664-e7d8-4ed4-8d9c-60e1b29878b0",
+    "products":[
+
+    ]
+  },
+  {
+    "name": "Bebidas",
+    "id": 4,
+    "imageUrl": "https://firebasestorage.googleapis.com/v0/b/pizzaria-tarcisio.appspot.com/o/pizza.jpg?alt=media&token=6e84a664-e7d8-4ed4-8d9c-60e1b29878b0",
+    "products": [
+
+    ]
+  }
+]

@@ -1,0 +1,8 @@
+body {
+  background-color: #37474f;
+}
+
+.main-category-name {
+  flex-grow: 1;
+  line-height: 96px;
+}
